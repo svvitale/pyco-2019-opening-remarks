@@ -1,49 +1,305 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<title>reveal.js</title>
+    <title>PyColorado 2019 Opening Remarks</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/white.css" />
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi) ? "css/print/pdf.css" : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <style type="text/css">
+      /* 1. Style header/footer <div> so they are positioned as desired. */
+      #header-left {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+      }
+      #header-right {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+      }
+      #footer-left {
+        position: absolute;
+        font-size: 1.4em;
+        bottom: 5%;
+        left: 5%;
+	  }
+	  ul.checks {
+		  list-style-image: url("images/check.png")
+	  }
+	  ul.checks li {
+		  padding-left: 10px;
+	  }
+	  li {
+		  margin-top: 10px;
+	  }
+    </style>
 
-		<script src="js/reveal.js"></script>
+    <!-- 2. Create hidden header/footer <div> -->
+    <div id="hidden" style="display:none;">
+      <div id="header">
+        <div id="footer-left">@svvitale <i class="fa fa-twitter"></i> <i class="fa fa-github"></i></div>
+      </div>
+    </div>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <img src="images/pyco.png" class="plain" />
+          <h3>PyColorado Opening Remarks</h3>
+          <h4>Scott Vitale</h4>
+          <h4>September 7, 2019</h4>
+        </section>
+        <section>
+          <h2>Journey to PyColorado</h2>
+          <div>
+            <img src="images/dysentery.jpg" class="plain" />
+          </div>
+          <div class="fragment fade-out" style="position: relative; top: -130px;">
+            <img src="images/cover.png" class="plain" />
+          </div>
+          <aside class="notes" data-markdown>
+			* All of us made a journey to get here. 
+			* Some walked over from Union Station, 
+			* Many of our community here on the front range came to join us this weekend from Boulder, Fort Collins, or Colorado Springs 
+			* Some came from further - Minturn, Nederland, Carbondale 
+			* And still some from even further - Illinois, New York, Ohio, DC, Florida, California
+          </aside>
+        </section>
+        <section>
+          <h2>Packing the Wagon</h2>
+		  <div class="fragment">Why no regional conference in Colorado?</div>
+		  <div>
+			  <ul class="checks">
+				  <li class="fragment">Fun place to visit</li>
+				  <li class="fragment">2 tech hubs</li>
+				  <li class="fragment">Countless tech communities</li>
+				  <li class="fragment">Lots of Python Users</li>
+			  </ul>
+		  </div>
+          <aside class="notes" data-markdown>
+            Frank and I at PyCon 2018.
+          </aside>
+		</section>
+		<section>
+			<img src="images/venn4.png" class="plain" />
+			<aside class="notes" data-markdown>
+					No 1 dominant community, not much overlap.  Lots of unique perspectives across each of the communities.
+				  </aside>
+		
+		</section>
+		<section>
+			<h2>How do we make it happen?</h2>
+			<ul>
+				<li class="fragment">Timing</li>
+				<li class="fragment">Venue</li>
+				<li class="fragment">Sponsors</li>
+				<li class="fragment">Speakers</li>
+				<li class="fragment">Diversity & Inclusion</li>
+				<li class="fragment">Education Track</li>
+				<li class="fragment">Scholarships & Financial Aid</li>
+				<li class="fragment">Catering</li>
+			</ul>
+		</section>
+        <section>
+		  <h2>Rounding up Pioneers</h2>
+		  <div class="fragment">
+			  Incredible support from other conferences
+			  <ul>
+					<li class="fragment">CoC from PyCon + PyBay</li>
+					<li class="fragment">CoC Hotline from PyCascades</li>
+					<li class="fragment">Visa Letters from PyTexas</li>
+					<li class="fragment">Venue and sponsor guidance from DinoJS</li>
+			  </ul>
+		  </div>
+        </section>
+        <section>
+		  <h2>Stream crossings</h2>
+		  <div class="fragment">
+			  Get to a conference MVP
+			  <ul>
+					<li class="fragment">1 day of Workshops</li>
+					<li class="fragment">2 days of Talks</li>
+					<li class="fragment">Single Track</li>
+					<li class="fragment">Speaker Gender Parity</li>
+					<li class="fragment">Data science + web + devops</li>
+					<li class="fragment">Venue with Character</li>
+					<li class="fragment">Affordable</li>
+			  </ul>
+		  </div>
+		</section>
+		<section>
+			<h2>Okay, a few things died of dysentery...</h2>
+			<ul>
+					<li class="fragment">Sprints</li>
+					<li class="fragment">Family Track</li>
+					<li class="fragment">Swagless Initiative</li>
+					<li class="fragment">Scholarships & Financial Aid</li>
+			  </ul>
+		</section>
+		<section>
+			<h2>And we won a few perks</h2>
+			<ul>
+					<li class="fragment">All day coffee &amp; tea</li>
+					<li class="fragment">Microsoft's D&amp;I Lunch</li>
+					<li class="fragment">Plus One Tickets</li>
+			</ul>
+			<aside class="notes" data-markdown>
+					I sincerely hope you enjoy the weekend we've put together for you.
+			</aside>
+		</section>
+		<section>
+		  <h2>Schedule</h2>
+		  <ul>
+				<li class="fragment">16 speakers</li>
+				<li class="fragment">Schedule is online</li>
+				<li class="fragment">30 min + 10 min break</li>
+				<li class="fragment">Q &amp; A</li>
+			</ul>
+			<aside class="notes" data-markdown>
+				* One update to the schedule - Kristie Wirth @ 3:50pm Sat, Lightning Talks @ 3:40pm Sun
+				* "When you get up in front of that microphone, you're ready to say something, please remember to phrase your question in the form of a question."
+			</aside>
+		</section>
+		<section>
+				<h2>Schedule (contd.)
+				</h2>
+				<ul>
+					  <li class="fragment">12:10pm Microsoft Diversity Lunch</li>
+					  <li class="fragment">Wrap up @ 5:40pm</li>
+				  </ul>
+				  <aside class="notes" data-markdown>
+				  </aside>
+			  </section>
+			  <section>
+					<h2>Geography
+						</h2>
+						<ul>
+							  <li class="fragment">Mother's Room</li>
+							  <li class="fragment">Bathrooms</li>
+							  <li class="fragment">The Loge</li>
+							  <li class="fragment">Speaker's Lounge</li>
+						  </ul>
+						  <aside class="notes" data-markdown>
+						  </aside>
+			  </section>
+			  <section>
+					<h2>Community
+					</h2>
+					<ul>
+						<li class="fragment">CoC Hotline - 720-789-PYCO</li>
+						<li class="fragment">Questions or Feedback on Slack</li>
+						<li class="fragment">Pac-Man Rule</li>
+						<li class="fragment">#food</li>
+					  </ul>
+					  <aside class="notes" data-markdown>
+						  * Organizers have a PyCO status logo on Slack
+					  </aside>
+				  </section>
+				  <section>
+						<h2>Social Media
+						</h2>
+						<ul class="fragment">
+							  <li>Google Photo Share<br/>http://photos.pycolorado.org</li>
+							  <li><span style="color: red;">RED</span> lanyard = STOP</li>
+							  <li class="fragment">@pycolorado<br />#pycolorado</li>
+						  </ul>
+ 
+						  <aside class="notes" data-markdown>
+						  </aside>
+					  </section>
+					<section>
+						<h2>Thank you Summit Sponsor, Cuttlesoft!
+						</h2>
+						<img src="images/cuttlesoft.png" class="plain" />
+						</section>
+								<section>
+										<h2>Thank you Peak Sponsors!
+										</h2>
+										<div style="display: flex; align-items: center; justify-content: space-around">
+												<img src="images/twitter.png" class="plain" />
+												<img src="images/heroku.png" class="plain" />
+										</div>
+										</section>
+										<section>
+												<h3>Thank you Front Range Sponsor
+												</h3>
+												<img src="images/linode.png" class="plain" />
+												</section>
+												<section>
+														<h3>Thank you to the PSF
+														</h3>
+														<img src="images/psf.png" class="plain" />
+		
+														<aside class="notes" data-markdown>
+																I have the great pleasure of introducing our first keynote.
+								
+																Ewa has been with the Python Software Foundation since 2012 and prior to that she assisted with PyCon as a contractor since 2008. Ewa’s responsibilities include giving direction and leadership to the Foundation, working with the board of directors on long-range strategic planning, and overseeing financial and program operations to name a few.
+															</aside>
+								
+													</section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+      var header = $("#header").html();
+      if (window.location.search.match(/print-pdf/gi)) {
+        Reveal.addEventListener("ready", function(event) {
+          $(".slide-background").append(header);
+        });
+      } else {
+        Reveal.addEventListener("slidechanged", function(event) {
+          if (event.indexh > 0) {
+            if ($("#footer-left", "div.reveal").length === 0) {
+              // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+              $("div.reveal").append(header);
+            }
+          } else {
+            console.log("remove");
+            $("#footer-left", "div.reveal").remove();
+          }
+        });
+      }
+    </script>
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      });
+    </script>
+  </body>
 </html>
